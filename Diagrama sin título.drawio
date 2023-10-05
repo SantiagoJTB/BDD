@@ -1,9 +1,916 @@
-<mxfile host="app.diagrams.net" modified="2023-10-05T17:57:15.631Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/114.0" version="22.0.2" etag="Bavd54NJA8JXQbG8BALY" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-05T19:25:56.825Z" agent="Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/114.0" etag="_D79rNPrLafXeJNtjNwS" version="22.0.2" type="github">
   <diagram name="Página-1" id="uNB5pEVy93Rb7bBBWzrT">
-    <mxGraphModel>
+    <mxGraphModel dx="2261" dy="795" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-1" value="&lt;b&gt;EJERCICIO 1.- SERVICIO MILITAR&lt;/b&gt;&lt;br&gt;El Ministerio de Defensa desea diseñar una Base de Datos para llevar un cierto control de los&lt;br&gt;soldados que realizan el servicio militar. Los datos significativos a tener en cuenta son:&lt;br&gt;• Un soldado se define por su código de soldado (único), su nombre y apellidos, y su graduación.&lt;br&gt;• Existen varios cuarteles, cada uno se define por su código de cuartel, nombre y ubicación.&lt;br&gt;• Hay que tener en cuenta que existen diferentes Cuerpos del Ejército (Infantería, Artillería,&lt;br&gt;Armada, ....), y cada uno se define por un código de Cuerpo y denominación.&lt;br&gt;• Los soldados están agrupados en compañías, siendo significativa para cada una de éstas, el&lt;br&gt;número de compañía y la actividad principal que realiza.&lt;br&gt;• Se desea controlar los servicios que realizan los soldados (guardias, imaginarias, cuarteleros, ...),&lt;br&gt;y se definen por el código de servicio y descripción.&lt;br&gt;Consideraciones de diseño:&lt;br&gt;• Un soldado pertenece a un único cuerpo y a una única compañía, durante todo el servicio&lt;br&gt;militar. A una compañía pueden pertenecer soldados de diferentes cuerpos, no habiendo relación&lt;br&gt;directa entre compañías y cuerpos.&lt;br&gt;• Los soldados de una misma compañía pueden estar destinados en diferentes cuarteles, es decir,&lt;br&gt;una compañía puede estar ubicada en varios cuarteles, y en un cuartel puede haber varias&lt;br&gt;compañías. Eso si, un soldado sólo esta en un cuartel.&lt;br&gt;• Un soldado realiza varios servicios a lo largo de la mili. Un mismo servicio puede ser realizado&lt;br&gt;por más de un soldado (con independencia de la compañía), siendo significativa la fecha de&lt;br&gt;realización." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-290" y="40" width="570" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-2" target="KOK08FNY_vB4uzNQ2yjn-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-2" target="KOK08FNY_vB4uzNQ2yjn-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-2" value="Soldado" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-3" value="Cuartel" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="490" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-4" target="KOK08FNY_vB4uzNQ2yjn-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-4" value="Compañia" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-6" value="Servicio" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-7" value="Cuerpo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="780" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-9" target="KOK08FNY_vB4uzNQ2yjn-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" target="KOK08FNY_vB4uzNQ2yjn-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="640" y="175" as="sourcePoint" />
+            <mxPoint x="790" y="305" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="640" y="305" />
+              <mxPoint x="780" y="305" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-9" value="pertenece" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="100" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-14" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="540" y="110" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-15" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="707" y="110" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-16" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="707" y="270" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-19" target="KOK08FNY_vB4uzNQ2yjn-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-19" value="destinada" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="370" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-22" target="KOK08FNY_vB4uzNQ2yjn-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-22" value="realiza" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="230" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-25" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="620" y="60" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-26" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="460" y="190" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-27" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="460" y="320" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-30" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="255" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-31" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="787" y="340" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-32" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="787" y="450" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-33" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="890" y="395" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-35" value="descripción" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="395" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-36" value="codigo de servicio" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="430" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-37" value="actividad" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="295" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-38" value="número" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="250" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-39" value="denominación" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="140" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-40" value="codigo del cuerpo" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="90" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-41" value="ubicación" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="545" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-42" value="nombre" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="550" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-43" value="codigo de cuartel" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="495" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-44" value="graduación" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="150" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-45" value="apellidos" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="100" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-46" value="nombre" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="60" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-48" value="&lt;b&gt;EJERCICIO 2.- GESTIÓN DE TRABAJOS DE FIN DE CARRERA.&lt;/b&gt;&lt;br&gt;Una Escuela de Informática quiere generar un sistema para tener controlado en una base de datos&lt;br&gt;todo lo referente a los Trabajos Fin de Carrera: alumnos que los realizan, profesores que los dirigen, temas&lt;br&gt;de los que tratan y tribunales que los corrigen. Por tanto, es de interés:&lt;br&gt;• Que los alumnos se definan por su número de matrícula, DNI y nombre. Un alumno realiza,&lt;br&gt;evidentemente, sólo un T.F.C.&lt;br&gt;• Que los T.F.C. se definen por su tema, por un número de orden y por la fecha de comienzo. Un&lt;br&gt;T.F.C. determinado, no puede ser realizado por varios alumnos.&lt;br&gt;• Que un profesor se define por su DNI, nombre y domicilio; y puesto que los T.F.C. son del área&lt;br&gt;en el que trabaja, NO interesa conocer el T.F.C. que dirige sino a qué alumno se lo dirige.&lt;br&gt;• Que un Tribunal está formado por varios profesores y los profesores pueden formar parte de&lt;br&gt;varios tribunales. Por otra parte, sí es de interés para el tribunal conocer qué alumno es el que se&lt;br&gt;presenta, con qué T.F.C. y en qué fecha lo ha defendido. El tribunal se define por un número de&lt;br&gt;tribunal, lugar de examen y por el número de componentes.&lt;br&gt;• Al margen de esto, un alumno puede haber pertenecido a algún grupo de investigación del que&lt;br&gt;haya surgido la idea del T.F.C. Dichos grupos se identifican por un número de grupo, su nombre&lt;br&gt;y por su número de componentes. Un alumno no puede pertenecer a más de un grupo y no es de&lt;br&gt;interés saber si el grupo tiene algo que ver o no con el T.F.C. del alumno; sí siendo de interés la&lt;br&gt;fecha de incorporación a dicho grupo.&lt;br&gt;• Por otra parte, un profesor, al margen de dirigir el T.F.C. de algunos alumnos, puede haber&lt;br&gt;colaborado con otros en la realización de dicho T.F.C. pero siendo otro profesor el que lo&lt;br&gt;dirige. En este caso, sólo es interesante conocer qué profesor ha ayudado a qué alumno (a un&lt;br&gt;alumno le pueden ayudar varios profesores)." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-295" y="630" width="580" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-49" target="KOK08FNY_vB4uzNQ2yjn-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-49" target="KOK08FNY_vB4uzNQ2yjn-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-49" value="Alumno" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="790" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-50" target="KOK08FNY_vB4uzNQ2yjn-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-50" value="T.F.C" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="790" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-51" target="KOK08FNY_vB4uzNQ2yjn-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-51" value="realiza" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="780" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-54" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="620" y="750" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-55" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="540" y="780" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-56" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="690" y="780" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-57" target="KOK08FNY_vB4uzNQ2yjn-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-57" value="Profesor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1010" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-58" value="Grupo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="570" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-59" target="KOK08FNY_vB4uzNQ2yjn-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-59" value="pertenece" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="670" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-62" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="695" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-63" value="0:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="460" y="750" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-65" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="470" y="638" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-66" target="KOK08FNY_vB4uzNQ2yjn-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-66" value="dirige" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="890" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-69" target="KOK08FNY_vB4uzNQ2yjn-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-69" value="pertenece" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1000" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-70" target="KOK08FNY_vB4uzNQ2yjn-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-70" value="Tribunal" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="1010" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-71" target="KOK08FNY_vB4uzNQ2yjn-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-71" value="examina" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="890" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-77" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="470" y="970" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-78" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="810" y="860" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-79" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="820" y="970" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-80" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="860" y="915" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-81" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="540" y="1010" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-82" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="690" y="1000" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-83" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="620" y="970" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-84" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="470" y="860" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-85" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="915" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-86" value="numero de componentes" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="1070" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-87" value="lugar de examen" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="1070" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-88" value="número de tribunal" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="1020" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-89" value="domicilio" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1030" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-90" value="nombre" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="1070" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-91" value="DNI" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="1070" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-92" value="fecha de comienzo" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="810" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-93" value="numero de orden" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="760" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-94" value="tema" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="740" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-95" value="nombre" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="820" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-96" value="DNI" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="770" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-98" value="nombre" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="610" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-99" value="numero de grupo" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="520" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-101" value="numero de componentes" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="560" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-102" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="460" as="sourcePoint" />
+            <mxPoint x="1090" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-103" value="&lt;b&gt;EJERCICIO 3.- AGENCIAS DE VIAJES&lt;/b&gt;&lt;br&gt;Una cadena de agencias de viajes desea disponer de una Base de Datos que contemple información&lt;br&gt;relativa al hospedaje y vuelos de los turistas que la contratan.&lt;br&gt;Los datos a tener en cuenta son:&lt;br&gt;• La cadena de agencias está compuesta por un conjunto de sucursales. Cada sucursal viene&lt;br&gt;definida por el código de sucursal, dirección y teléfono.&lt;br&gt;• La cadena tiene contratados una serie de hoteles de forma exclusiva. Cada hotel estará definido&lt;br&gt;por el código de hotel, nombre, dirección, ciudad, teléfono y número de plazas disponibles.&lt;br&gt;• De igual forma, la cadena tiene contratados una serie de vuelos regulares de forma exclusiva.&lt;br&gt;Cada vuelo viene definido por el número de vuelo, fecha y hora, origen y destino, plazas totales y&lt;br&gt;plazas de clase turista de las que dispone.&lt;br&gt;• La información que se desea almacenar por cada turista es el código de turista, nombre y&lt;br&gt;apellidos, dirección y teléfono.&lt;br&gt;Por otra parte, hay que tener en cuenta la siguiente información:&lt;br&gt;• A la cadena de agencias le interesa conocer que sucursal ha contratado el turista.&lt;br&gt;• A la hora de viajar el turista puede elegir cualquiera de los vuelos que ofrece la cadena, y en que&lt;br&gt;clase (turista o primera) desea viajar.&lt;br&gt;• De igual manera, el turista se puede hospedar en cualquiera de los hoteles que ofrece la cadena,&lt;br&gt;y elegir el régimen de hospedaje (media pensión o pensión completa). Siendo significativa la&lt;br&gt;fecha de llegada y de partida." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-285" y="1330" width="560" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-104" target="KOK08FNY_vB4uzNQ2yjn-115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-104" value="Sucursales" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="1460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-105" target="KOK08FNY_vB4uzNQ2yjn-108">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-105" target="KOK08FNY_vB4uzNQ2yjn-120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-105" value="Turista" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-106" target="KOK08FNY_vB4uzNQ2yjn-124">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-106" value="Vuelo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="1300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-107" target="KOK08FNY_vB4uzNQ2yjn-114">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-107" value="Hotel" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="1610" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-110" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-108" target="KOK08FNY_vB4uzNQ2yjn-104">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-108" value="contrata" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="1450" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-111" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="700" y="1420" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-112" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="1460" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-113" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="780" y="1460" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-114" target="KOK08FNY_vB4uzNQ2yjn-104">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-114" value="contrata" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="1600" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-115" target="KOK08FNY_vB4uzNQ2yjn-106">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-115" value="contrata" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="1290" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-122" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-120" target="KOK08FNY_vB4uzNQ2yjn-107">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-120" value="elige" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="1600" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-126" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-124" target="KOK08FNY_vB4uzNQ2yjn-105">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-124" value="elige" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="1290" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-129" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="900" y="1260" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-130" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="820" y="1300" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-131" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="920" y="1400" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-132" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="920" y="1550" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-133" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="810" y="1610" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-134" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="900" y="1684" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-135" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="580" y="1290" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-136" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1260" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-137" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="520" y="1390" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-138" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="1680" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-139" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="520" y="1550" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-140" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="590" y="1610" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-141" value="numero de vuelo" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="1190" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-142" value="plazas clase turista" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="1190" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-143" value="número de plazas disponibles" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="852" y="1756" width="110" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-144" value="telefono" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="1758" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-145" value="dirección" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="1758" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-146" value="codigo de hotel" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="1758" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-147" value="nombre" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="1758" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-148" value="telefono" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="962" y="1515" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-149" value="dirección" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="1465" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-150" value="codigo de sucursal" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="962" y="1415" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-151" value="" style="endArrow=none;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-143" target="KOK08FNY_vB4uzNQ2yjn-107">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="1500" as="sourcePoint" />
+            <mxPoint x="550" y="1450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-152" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-107" target="KOK08FNY_vB4uzNQ2yjn-144">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="1500" as="sourcePoint" />
+            <mxPoint x="550" y="1450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-153" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-107" target="KOK08FNY_vB4uzNQ2yjn-145">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="1500" as="sourcePoint" />
+            <mxPoint x="550" y="1450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-154" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-107" target="KOK08FNY_vB4uzNQ2yjn-147">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="1500" as="sourcePoint" />
+            <mxPoint x="550" y="1450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-155" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-146" target="KOK08FNY_vB4uzNQ2yjn-107">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="1500" as="sourcePoint" />
+            <mxPoint x="550" y="1450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-156" value="plazas totales" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="1190" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-157" value="origen y destino" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1190" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-158" value="fecha y hora" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="1190" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-159" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-106" target="KOK08FNY_vB4uzNQ2yjn-158">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="1500" as="sourcePoint" />
+            <mxPoint x="550" y="1450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-160" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-106" target="KOK08FNY_vB4uzNQ2yjn-157">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="1500" as="sourcePoint" />
+            <mxPoint x="550" y="1450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-161" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-106" target="KOK08FNY_vB4uzNQ2yjn-142">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="1500" as="sourcePoint" />
+            <mxPoint x="550" y="1450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-162" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-106" target="KOK08FNY_vB4uzNQ2yjn-156">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="1500" as="sourcePoint" />
+            <mxPoint x="550" y="1450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-163" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-106" target="KOK08FNY_vB4uzNQ2yjn-141">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="1500" as="sourcePoint" />
+            <mxPoint x="550" y="1450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-164" value="telefono" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="1365" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-165" value="dirección" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="1515" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-166" value="apellidos" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="1565" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-167" value="nombre" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="1465" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-168" value="codigo de turista" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="1415" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-169" value="régimen de hospedaje" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="1640" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-170" value="clase" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="1270" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-171" value="&lt;b&gt;EJERCICIO 4.- GESTIÓN DE EXÁMENES&lt;/b&gt;&lt;br&gt;Los profesores de la asignatura de Bases de Datos de una Escuela Universitaria deciden crear una&lt;br&gt;base de datos que contenga la información de los resultados de las pruebas realizadas a los alumnos. Para&lt;br&gt;realizar el diseño se sabe que:&lt;br&gt;• Los alumnos están definidos por su n° de matrícula, nombre y el grupo al que asisten a clase.&lt;br&gt;• Dichos alumnos realizan dos tipos de pruebas a lo largo del curso académico:&lt;br&gt;1. Exámenes escritos: cada alumno realiza varios a lo largo del curso, y se definen por el n° de&lt;br&gt;examen, el n° de preguntas de que consta y la fecha de realización (la misma para todos los&lt;br&gt;alumnos que realizan el mismo examen). Evidentemente, es importante almacenar la nota de&lt;br&gt;cada alumno por examen.&lt;br&gt;2. Prácticas: se realiza un n° indeterminado de ellas durante el curso académico, algunas serán en&lt;br&gt;grupo y otras individuales. Se definen por un código de práctica, título y el grado de&lt;br&gt;dificultad. En este caso los alumnos pueden examinarse de cualquier práctica cuando lo&lt;br&gt;deseen, debiéndose almacenar la fecha y nota obtenida.&lt;br&gt;• En cuanto a los profesores, únicamente interesa conocer (además de sus datos personales: DNI y&lt;br&gt;nombre), quien es el qué ha diseñado cada práctica, sabiendo que en el diseño de una práctica&lt;br&gt;puede colaborar más de uno, y que un profesor puede diseñar más de una práctica. Interesa,&lt;br&gt;además, la fecha en que ha sido diseñada cada práctica por el profesor correspondiente." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-320" y="2030" width="630" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-177" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-172" target="KOK08FNY_vB4uzNQ2yjn-176">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-180" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-172" target="KOK08FNY_vB4uzNQ2yjn-179">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-172" value="Alumno" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="2080" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-192" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-173" target="KOK08FNY_vB4uzNQ2yjn-191">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-173" value="Prácticas" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="2320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-195" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-174" target="KOK08FNY_vB4uzNQ2yjn-194">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-174" value="Examen" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="747" y="2080" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-175" value="Profesor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="2320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-178" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-176" target="KOK08FNY_vB4uzNQ2yjn-174">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-176" value="realiza" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="2070" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-185" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-179" target="KOK08FNY_vB4uzNQ2yjn-173">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-179" value="realiza" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="2190" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-187" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="530" y="2070" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-188" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="450" y="2160" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-189" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="680" y="2070" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-190" value="Nota" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="910" y="2200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-193" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-191" target="KOK08FNY_vB4uzNQ2yjn-175">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-191" value="diseña" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="2310" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-196" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-194" target="KOK08FNY_vB4uzNQ2yjn-190">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-194" value="aporta" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="930" y="2070" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-197" value="&lt;div&gt;1:n&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="950" y="2040" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-198" value="&lt;div&gt;1:n&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="980" y="2160" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-199" value="&lt;div&gt;1:n&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="880" y="2070" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-200" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="450" y="2280" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-201" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="490" y="2215" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-202" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="610" y="2280" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-204" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="530" y="2320" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-205" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="690" y="2320" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-206" value="&lt;b&gt;EJERCICIO 5.- CONCESIONARIO DE AUTOMÓVILES&lt;/b&gt;&lt;br&gt;Un concesionario de automóviles desea informatizar su gestión de ventas de vehículos. En particular,&lt;br&gt;se quiere tener almacenada la información referente a los clientes que compran en el concesionario, los&lt;br&gt;vehículos vendidos, así como los vendedores que realizan las distintas ventas. Para ello se tendrá en cuenta&lt;br&gt;que:&lt;br&gt;• El concesionario dispone de un catálogo de vehículos definidos por su marca, modelo, cilindrada&lt;br&gt;y precio.&lt;br&gt;• Cada uno de los modelos dispondrá de unas opciones adicionales (aire acondicionado, pintura&lt;br&gt;metalizada, etc.). Las opciones vienen definidas por un nombre y una descripción. Hay que tener&lt;br&gt;en cuenta que una opción puede ser común para varios modelos variando sólo el precio en cada&lt;br&gt;caso.&lt;br&gt;• En cuanto a los clientes, la información de interés es el nombre, DNI, dirección y teléfono, lo&lt;br&gt;mismo que para los vendedores.&lt;br&gt;• Los clientes pueden ceder su coche usado en el momento de comprar un vehículo nuevo. El&lt;br&gt;coche usado vendrá definido por su marca, modelo, matrícula y precio de tasación. Es&lt;br&gt;importante conocer la fecha en la que el cliente realiza esta cesión.&lt;br&gt;• Se desea saber qué vendedor ha vendido qué modelo a qué cliente. También la fecha de la venta&lt;br&gt;y la matricula del nuevo vehículo. Es importante así mismo saber las opciones que el cliente ha&lt;br&gt;elegido para el modelo que compra" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-305" y="2600" width="600" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-210" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-207" target="KOK08FNY_vB4uzNQ2yjn-208">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-207" value="Cliente" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="385" y="2740" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-211" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-208" target="KOK08FNY_vB4uzNQ2yjn-209">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-208" value="compra" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="595" y="2730" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-217" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-209" target="KOK08FNY_vB4uzNQ2yjn-215">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-209" value="Vehiculo" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="755" y="2740" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-212" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="535" y="2740" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-213" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="695" y="2740" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-214" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="615" y="2700" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-218" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-215" target="KOK08FNY_vB4uzNQ2yjn-216">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-215" value="dispone" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="775" y="2840" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-216" value="Opciones" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="755" y="2973" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-219" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="825" y="2810" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-220" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="825" y="2930" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-221" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="855" y="2865" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-227" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-222" target="KOK08FNY_vB4uzNQ2yjn-226">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-222" value="Vendedor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="575" y="2590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-224" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-223" target="KOK08FNY_vB4uzNQ2yjn-207">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-225" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-223" target="KOK08FNY_vB4uzNQ2yjn-222">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-223" value="cede" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="405" y="2580" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-228" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-226" target="KOK08FNY_vB4uzNQ2yjn-209">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-226" value="vende" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="775" y="2580" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-229" value="0:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="510" y="2590" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-230" value="0:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="445" y="2680" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-231" value="0:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="425" y="2550" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-232" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="715" y="2590" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-233" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="820" y="2688" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-234" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="795" y="2550" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-235" value="&lt;b&gt;EJERCICIO 6.- HOLDING EMPRESARIAL&lt;/b&gt;&lt;br&gt;Un holding de empresas desea tener una base de datos referente a las empresas que posee, sus&lt;br&gt;vendedores, así como los asesores que trabajan en el holding. La información está organizada de la&lt;br&gt;siguiente forma:&lt;br&gt;• Los vendedores se organizan en una jerarquía de pirámide, es decir, cada vendedor puede captar&lt;br&gt;otros vendedores para el holding, de manera que un vendedor tendrá a su cargo varios&lt;br&gt;vendedores. Hay que tener en cuenta que un vendedor sólo podrá trabajar en una empresa y sólo&lt;br&gt;podrá captar vendedores para la empresa en que trabaja; siendo importante almacenar la fecha en&lt;br&gt;que se realiza la captación. Los datos de interés para los vendedores serán el código de vendedor,&lt;br&gt;nombre y la dirección.&lt;br&gt;• Las empresas cubrirán diferentes áreas del mercado y un mismo área puede ser cubierta por varias&lt;br&gt;empresas. Es interesante conocer el nombre del área y una descripción de ésta. Las empresas&lt;br&gt;pueden estar actuando en varios países y en un país pueden estar desarrollando actividades varias&lt;br&gt;empresas. Sin embargo, cada empresa tendrá su sede en un único país, siendo importante la&lt;br&gt;ciudad donde se localiza la sede. Por cuestiones fiscales, una empresa puede tener su sede en un&lt;br&gt;país en el que no esté desarrollando actividad alguna. Los datos de interés para las empresas son el&lt;br&gt;nombre, la fecha de entrada en el holding, la facturación anual y el número de vendedores que&lt;br&gt;posee.&lt;br&gt;• Los datos de interés de los países son: el nombre, el PIB, el número de habitantes y la capital.&lt;br&gt;• Los asesores entran en el holding para dar soporte en cada una de las áreas en las que actúa el&lt;br&gt;holding. Un asesor puede cubrir varias áreas y un área puede ser cubierta por varios asesores. Un&lt;br&gt;asesor puede asesorar a varias empresas y una empresa tener varios asesores. Es importante saber&lt;br&gt;en qué fecha un asesor comienza a trabajar para una empresa en un área determinada. Los datos&lt;br&gt;de interés de los asesores son el código de asesor, nombre, dirección y la titulación" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-310" y="3160" width="610" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-239" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-236" target="KOK08FNY_vB4uzNQ2yjn-237">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-267" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-236" target="KOK08FNY_vB4uzNQ2yjn-244">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-236" value="Vendedor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="642.5" y="3250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-237" value="capta" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="522.5" y="3170" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-253" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-238" target="KOK08FNY_vB4uzNQ2yjn-251">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-262" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-238" target="KOK08FNY_vB4uzNQ2yjn-258">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-238" value="Empresa" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="642.5" y="3433" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-240" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.6;entryY=-0.017;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-237" target="KOK08FNY_vB4uzNQ2yjn-236">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-241" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="572.5" y="3288" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-242" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="632.5" y="3180" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-243" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="420" y="3150" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-268" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-244" target="KOK08FNY_vB4uzNQ2yjn-238">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-244" value="trabaja para" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="652.5" y="3342" width="100" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-248" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="707" y="3318" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-249" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="707" y="3403" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-250" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="752.5" y="3358" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-254" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-251" target="KOK08FNY_vB4uzNQ2yjn-252">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-251" value="cubre" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="662.5" y="3533" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-252" value="Area" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="642.5" y="3653" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-255" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="702.5" y="3503" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-256" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="742.5" y="3558" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-257" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="702.5" y="3613" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-261" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-258" target="KOK08FNY_vB4uzNQ2yjn-260">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-258" value="tiene cede en" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="817.5" y="3428" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-260" value="País" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="977.5" y="3433" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-263" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="777.5" y="3428" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-264" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="917.5" y="3433" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-265" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="847.5" y="3398" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-270" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-266" target="KOK08FNY_vB4uzNQ2yjn-269">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-266" value="Asesor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="3433" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-271" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-269" target="KOK08FNY_vB4uzNQ2yjn-238">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-269" value="aconseja" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="522.5" y="3423" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-273" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-272" target="KOK08FNY_vB4uzNQ2yjn-252">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-274" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-272" target="KOK08FNY_vB4uzNQ2yjn-266">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-272" value="cubre" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="3643" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-275" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="430" y="3558" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-276" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="400" y="3723" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-277" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="530" y="3653" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-278" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="540" y="3398" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-279" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="592.5" y="3433" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-280" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="480" y="3433" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-282" value="&lt;b&gt;EJERCICIO 7.- CLUB NÁUTICO&lt;/b&gt;&lt;br&gt;Un club náutico desea tener informatizados los datos correspondientes a sus instalaciones,&lt;br&gt;empleados, socios y embarcaciones que se encuentran en dicho club. El club esta organizado de la&lt;br&gt;siguiente forma:&lt;br&gt;• Los socios pertenecientes al club vienen definidos por su nombre, dirección, DNI, teléfono y&lt;br&gt;fecha de ingreso en el club.&lt;br&gt;• Las embarcaciones vienen definidas por: matricula, nombre, tipo y dimensiones.&lt;br&gt;• Los amarres tienen como datos de interés el número de amarre, la lectura del contador de agua y&lt;br&gt;luz, y si tienen o no servicios de mantenimiento contratados.&lt;br&gt;• Por otro lado, hay que tener en cuenta que una embarcación pertenece a un socio aunque un&lt;br&gt;socio puede tener varias embarcaciones. Una embarcación ocupará un amarre y un amarre está&lt;br&gt;ocupado por una sola embarcación. Es importante la fecha en la que una embarcación en&lt;br&gt;asignada a un amarre.&lt;br&gt;• Los socios pueden ser propietarios de amarres, siendo importante la fecha de compra del&lt;br&gt;amarre. Hay que tener en cuenta que un amarre pertenece a un solo socio y que NO HAY&lt;br&gt;ninguna relación directa entre la fecha en la que se compra un amarre y en la que una&lt;br&gt;embarcación se asigna a un amarre.&lt;br&gt;• El club náutico está dividido en varias zonas definidas por una letra, el tipo de barcos que tiene,&lt;br&gt;el numero de barcos que contiene, la profundidad y el ancho de los amarres. Una zona tendrá&lt;br&gt;varios amarres y un amarre pertenece a una sola zona.&lt;br&gt;• En cuanto a los empleados, estos vienen definidos por su código, nombre, dirección, teléfono y&lt;br&gt;especialidad. Un empleado está asignado a varias zonas y en una zona puede haber más de un&lt;br&gt;empleado, siendo de interés el número de barcos de los que se encarga en cada zona. Hay que&lt;br&gt;tener en cuenta que un empleado puede no encargarse de todos los barcos de una zona" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-280" y="3900" width="550" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-290" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-283" target="KOK08FNY_vB4uzNQ2yjn-289">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-283" value="Socio" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="3850" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-287" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-284" target="KOK08FNY_vB4uzNQ2yjn-286">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-284" value="Embarcación" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="3850" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-285" value="Amarre" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="4060" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-288" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-286" target="KOK08FNY_vB4uzNQ2yjn-283">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-286" value="pertenece" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="545" y="3840" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-291" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-289" target="KOK08FNY_vB4uzNQ2yjn-285">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-289" value="es propietario" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="715" y="3947" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-292" value="Empleado" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="4280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-293" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="500" y="3850" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-294" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="565" y="3810" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-295" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="637.5" y="3850" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-296" value="0:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="765" y="3917" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-297" value="0:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="770" y="4017" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-298" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="805" y="3967" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-304" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-299" target="KOK08FNY_vB4uzNQ2yjn-303">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-299" value="Zona" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="4060" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-301" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-300" target="KOK08FNY_vB4uzNQ2yjn-299">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-302" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-300" target="KOK08FNY_vB4uzNQ2yjn-285">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-300" value="pertenece" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="545" y="4050" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-305" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="KOK08FNY_vB4uzNQ2yjn-303" target="KOK08FNY_vB4uzNQ2yjn-292">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-303" value="asignado" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="4160" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-306" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="635" y="4062" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-307" value="1:1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="490" y="4060" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-308" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="565" y="4017" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-310" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="460" y="4185" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-311" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="425" y="4240" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-312" value="1:n" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="425" y="4130" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-313" value="&lt;b&gt;EJERCICIO 8.- COMPAÑÍA DE SEGUROS&lt;/b&gt;&lt;br&gt;Una compañía de seguros desea que se haga un diseño de una base de datos para gestionar toda la&lt;br&gt;información referente a los seguros que ofrece, los clientes a los que atiende y los agentes de seguros que&lt;br&gt;trabajan para la compañía. Esta compañía ofrece tres tipos de seguros:&lt;br&gt;• Seguros de Hogar: los seguros de este tipo ofrecidos por la compañía están ofertados de forma&lt;br&gt;fija (es decir se han hecho estudios previos), según el valor del continente (la casa), el contenido&lt;br&gt;(muebles, electrodomésticos, joyas, etc.), riesgos auxiliares (responsabilidad civil, asalto y otros).&lt;br&gt;Para cada oferta hay una prima asignada.&lt;br&gt;• Seguros de Vida: de la misma forma que los de hogar, existen varias ofertas fijas según la edad y&lt;br&gt;profesión del cliente, y la cobertura económica del seguro. De la misma forma que en los seguros&lt;br&gt;de Hogar, existe un prima fija para cada oferta.&lt;br&gt;• Seguros de Automóvil: también existen ofertas fijas, según la categoría de coche (utilitario, gama&lt;br&gt;media, gama alta, gran turismo, lujo, etc.), años del vehículo, edad del conductor y cobertura&lt;br&gt;(todo riesgo, franquicia, terceros, etc.). A cada una de estas ofertas le corresponde una prima.&lt;br&gt;Para llevar un control de las comisiones que se llevan los agentes y de sus carteras correspondientes,&lt;br&gt;la compañía necesita tener almacenados los datos de los agentes, considerándose de interés el nombre,&lt;br&gt;DNI, dirección y teléfono. Para el pago de comisiones y carteras (se entiende por “cartera” la comisión&lt;br&gt;anual del agente mientras el seguro este vigente), será necesario saber qué agente ha realizado qué seguro y&lt;br&gt;en qué fecha.&lt;br&gt;La compañía considera como datos de interés referentes al cliente (sea cual sea el seguro que&lt;br&gt;contrate), los siguientes: Nombre, dirección, teléfono y DNI.&lt;br&gt;Otras consideraciones sobre la contratación de seguros por parte del cliente son:&lt;br&gt;• Seguros Hogar: fecha del contrato del seguro y dirección del inmueble asegurado.&lt;br&gt;• Seguros Automóvil: fecha contratación, matrícula del vehículo, recargos y descuentos.&lt;br&gt;• Otras consideraciones: Un cliente puede contratar más de un seguro de Vida, más de un seguro&lt;br&gt;de Hogar y más de un seguro de Automóvil. Además estos contratos pueden realizarse a través&lt;br&gt;de distintos agentes. Los beneficiarios de seguros de vida pueden serlo de varios seguros, e&lt;br&gt;incluso de varios clientes distintos. Por supuesto un cliente puede nombrar a varios beneficiarios&lt;br&gt;de un mismo seguro de vida.&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-285" y="4500" width="560" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-316" value="&lt;b&gt;EJERCICIO 9.- OFICINA DE PATENTES&lt;/b&gt;&lt;br&gt;Una oficina de patentes desea disponer de una Base de Datos que contenga toda la información&lt;br&gt;relativa a la presentación de patentes, inventores que las presentan y las empresas que desean comprarlas.&lt;br&gt;Esta información tendrá que estar organizada teniendo en cuenta los siguientes puntos:&lt;br&gt;• Los datos de interés referentes a cada patente serán el número de patente y el nombre del&lt;br&gt;invento. La patente sólo puede pertenecer a un único inventor, no pudiendo realizarse varias&lt;br&gt;patentes referentes al mismo invento.&lt;br&gt;• Los inventores vendrán definidos por su nombre, D.N.I., dirección y teléfono. Estos inventores&lt;br&gt;podrán obtener varias patentes, siempre que éstas sean de diferentes inventos. Es importante&lt;br&gt;saber la fecha en la cual se ha obtenido la patente.&lt;br&gt;• Hay que tener en cuenta los casos en los que un inventor asesore a otros en el desarrollo de un&lt;br&gt;invento.&lt;br&gt;• Cada inventor tendrá uno o varios ayudantes que vendrán definidos por su nombre, dirección,&lt;br&gt;teléfono y D.N.I.. Además, estos ayudantes sólo podrán serlo de un inventor.&lt;br&gt;• Cada patente podrá se comprada por una sola empresa y una empresa podrá comprar diferentes&lt;br&gt;patentes, siendo de interés la fecha de compra de la patente. Las empresas vienen definidas por&lt;br&gt;un código de empresa, nombre, dirección y sus teléfonos.&lt;br&gt;• Las empresas, al realizar la compra de una patente, pueden tener interés en contratar a su&lt;br&gt;inventor. Es importante saber en qué fecha un inventor es contratado por una empresa con una&lt;br&gt;patente determinada.&lt;br&gt;• Un ayudante puede ser contratado por una empresa con independencia de que la empresa haya&lt;br&gt;contratado o no al inventor del que es ayudante, siendo importante conocer la fecha de&lt;br&gt;contratación." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-285" y="5120" width="560" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-317" value="&lt;b&gt;EJERCICIO 10.- INFORMACIÓN POLICIAL&lt;/b&gt;&lt;br&gt;La Policía quiere crear una base de datos sobre la seguridad en algunas entidades bancarias. Para&lt;br&gt;ello tiene en cuenta:&lt;br&gt;• Que cada entidad bancaria se caracteriza por un código y por el domicilio de su Central.&lt;br&gt;• Que cada entidad bancaria tiene más de una sucursal que también se caracteriza por un código y&lt;br&gt;por el domicilio, así como por el número de empleados de dicha sucursal.&lt;br&gt;• Que cada sucursal contrata, según el día, algunos vigilantes jurados, que se caracterizan por un&lt;br&gt;código y su edad. Un vigilante puede ser contratado por diferentes sucursales (incluso de&lt;br&gt;diferentes entidades), en distintas fechas y es un dato de interés dicha fecha, así como si se ha&lt;br&gt;contratado con arma o no.&lt;br&gt;• Por otra parte, se quiere controlar a las personas que han sido detenidas por atracar las&lt;br&gt;sucursales de dichas entidades. Estas personas se definen por una clave (código) y su nombre&lt;br&gt;completo.&lt;br&gt;• Alguna de estas personas están integradas en algunas bandas organizadas y por ello se desea&lt;br&gt;saber a qué banda pertenecen, sin ser de interés si la banda ha participado en el delito o no&lt;br&gt;Dichas bandas se definen por un número de banda y por el número de miembros.&lt;br&gt;• Así mismo, es interesante saber en qué fecha ha atracado cada persona una sucursal.&lt;br&gt;Evidentemente, una persona puede atracar varias sucursales en diferentes fechas, así como que&lt;br&gt;una sucursal puede ser atracada por varias personas.&lt;br&gt;• Igualmente, se quiere saber qué Juez ha estado encargado del caso, sabiendo que un individuo,&lt;br&gt;por diferentes delitos, puede ser juzgado por diferentes jueces. Es de interés saber, en cada&lt;br&gt;delito, si la persona detenida ha sido condenada o no y de haberlo sido, cuánto tiempo pasará en&lt;br&gt;la cárcel. Un Juez se caracteriza por una clave interna del juzgado, su nombre y los años de&lt;br&gt;servicio.&lt;br&gt;NOTA: En ningún caso interesa saber si un vigilante ha participado en la detención de un atracador." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-290" y="5720" width="570" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-318" value="&lt;b&gt;EJERCICIO 11.- HOSPITAL GENERAL&lt;/b&gt;&lt;br&gt;En un centro hospitalario se desea informatizar parte de la gestión relativa a pacientes. Tras el análisis&lt;br&gt;realizado, se establecen los siguientes requerimientos:&lt;br&gt;• Los datos de interés que se desea almacenar del paciente son: n° de la Seguridad Social, DNI,&lt;br&gt;nombre, apellidos y fecha de nacimiento.&lt;br&gt;• Un paciente estará asignado a una cama determinada de una planta del hospital, pudiendo estar a&lt;br&gt;lo largo del tiempo de ingreso en diferentes camas y plantas, siendo significativa la fecha de&lt;br&gt;asignación de cama y el número de ésta. Habrá que tener en cuenta que las camas se numeran&lt;br&gt;correlativamente por cada planta, es decir, existirá la cama número 12 de la tercera planta y&lt;br&gt;también la número 12 de la séptima planta. Las plantas del hospital estarán identificadas por&lt;br&gt;número de planta, su nombre y n° de camas de que dispone.&lt;br&gt;• Por cada paciente se entregará hasta un máximo de 4 tarjetas de visita. Estas tarjetas de visita&lt;br&gt;serán válidas para visitar a un único paciente. La tarjeta de visita se definirá por: n° de tarjeta de&lt;br&gt;visita y la hora de comienzo y de final en que se puede visitar al enfermo.&lt;br&gt;• A un paciente le pueden atender diferentes médicos, siendo significativa por cada visita médica la&lt;br&gt;fecha y hora de ésta. Y un paciente puede tener diferentes diagnósticos de enfermedad, siendo&lt;br&gt;significativa la fecha de diagnóstico. Por otra parte, un médico puede tratar diferentes tipos de&lt;br&gt;diagnósticos y viceversa.&lt;br&gt;• Los datos de interés de los médicos serán: código del médico, nombre y apellidos. Los datos de&lt;br&gt;interés de los diagnósticos serán: código de diagnóstico y descripción.&lt;br&gt;NOTA: una vez dado de alta un paciente se traslada toda la información relativa a éste a un fichero&lt;br&gt;histórico." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-305" y="6270" width="600" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="KOK08FNY_vB4uzNQ2yjn-320" value="&lt;b&gt;EJERCICIO 12.- ZOO&lt;/b&gt;&lt;br&gt;Un zoo necesita una aplicación informática para llevar su organización respecto a las especies que&lt;br&gt;posee, los empleados (cuidadores y guías), y los distintos itinerarios de visita que ofrece. La información&lt;br&gt;está estructurada de la siguiente manera:&lt;br&gt;• Especies: de las especies interesa saber el nombre en español, el nombre científico y una&lt;br&gt;descripción general. Hay que tener en cuenta que una especie puede vivir en diferentes hábitats&lt;br&gt;naturales y que un hábitat puede ser ocupado por diferentes especies. Las especies se&lt;br&gt;encuentran en distintas zonas del parque de manera que cada especie está en una zona y en una&lt;br&gt;zona hay varias especies.&lt;br&gt;• Hábitats: los diferentes hábitats naturales vienen definidos por el nombre, el clima y el tipo de&lt;br&gt;vegetación predominantes, así como el continente o continentes en los que se encuentran.&lt;br&gt;• Zonas: las zonas del parque en las que se encuentran las distintas especies vienen definidas por el&lt;br&gt;nombre y la extensión que ocupan.&lt;br&gt;• Itinerarios: los itinerarios discurren por distintas zonas del parque. La información de interés para&lt;br&gt;los itinerarios es: código de itinerario, la duración del recorrido, la longitud del itinerario, el&lt;br&gt;máximo número de visitantes autorizado y el número de distintas especies que visita. Hay que&lt;br&gt;tener en cuenta que un itinerario recorre distintas zonas del parque y que una zona puede ser&lt;br&gt;recorrida por diferentes itinerarios.&lt;br&gt;• Guías: los guías del parque vienen definidos por el nombre, dirección, teléfono y fecha en la que&lt;br&gt;comenzaron a trabajar en el zoo. Interesa saber qué guías llevan qué itinerarios, teniendo en&lt;br&gt;cuenta que un guía puede llevar varios itinerarios y que un itinerario puede ser asignado a&lt;br&gt;diferentes guías en diferentes horas, siendo éstas un dato de interés.&lt;br&gt;• Cuidadores: los cuidadores vienen definidos por el nombre, dirección, teléfono y fecha de&lt;br&gt;ingreso en el parque. Hay que tener en cuenta que un cuidador puede estar a cargo de varias&lt;br&gt;especies y que una especie puede ser atendida por varios cuidadores, siendo de interés la fecha&lt;br&gt;en la que un cuidador se hace cargo de una especie." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-295" y="6800" width="580" height="420" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
